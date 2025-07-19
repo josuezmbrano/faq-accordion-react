@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(235, 235, 235);
+  font-family: "Work Sans";
+}
+
+body {
+  background-image: url("./assets/background-pattern-desktop.svg");
+  background-size: 1920px auto;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion-card-container {
+  background: white;
+  width: 800px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 8px rgba(155, 155, 155, 0.4);
+}
+
+.content-container {
+    padding: 2rem;
+}
+
+.header-container {
+    display: flex;
+}
+
+.header-container h1 {
+    margin-left: 15px;
+    font-size: 45px;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.question-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.question-title h2 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.question-answer {
+    max-width: 90%;
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: rgb(129, 129, 129);
+    margin: 0
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; 
+  display: flex;
+  margin: 1.2rem 0
+}
+
+.accordion-content.open {
+  max-height: 100px; 
+}
+
+.button-style {
+    background: none;
+    border: none;
+}
