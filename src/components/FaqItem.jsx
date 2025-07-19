@@ -1,8 +1,6 @@
 import React from 'react'
-import useToggle from '../hooks/useToggle'
 
-export default function FaqItem({children}) {
-    const [isOpen, toggle] = useToggle()
+export default function FaqItem({children, activeId, toggleItem, itemId}) {
 
-    return children(isOpen, toggle)
+    return children(activeId === itemId, () => toggleItem(itemId))
 }
